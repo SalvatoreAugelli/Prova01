@@ -1,0 +1,957 @@
+*{
+    padding:                                        0;
+    background-clip:                                padding-box;
+   -GtkToolButton-icon-spacing:                     4;
+   -GtkTextView-error-underline-color:              #FC4138;
+   -GtkScrolledWindow-scrollbar-spacing:            0;
+   -GtkToolItemGroup-expander-size:                 11;
+   -GtkWidget-text-handle-width:                    20;
+   -GtkWidget-text-handle-height:                   20;
+   -GtkDialog-button-spacing:                       4;
+   -GtkDialog-action-area-border:                   0;
+    x-outline-color:                                  alpha(currentColor,0.3);
+    x-outline-style:                                  dashed;
+    x-outline-offset:                                -3px;
+    x-outline-width:                                  1px;
+   -gtk-outline-radius:                             3px;
+   -gtk-secondary-caret-color:                      #315bef;
+}
+
+
+
+
+
+/*
+.gtkstyle-fallback {
+    color: #2e3436;
+    background-color: #e8e8e7;
+}
+
+.gtkstyle-fallback:hover {
+    color: #2e3436;
+    background-color: white;
+}
+
+.gtkstyle-fallback:active {
+    color: #2e3436;
+    background-color: #cfcfcd;
+}
+
+.gtkstyle-fallback:disabled {
+    color: #8b8e8f;
+    background-color: #f1f1f1;
+}
+
+.gtkstyle-fallback:selected {
+    color: #ffffff;
+    background-color: #4a90d9;
+}
+
+.view,
+iconview,
+.view text,
+iconview text,
+textview text {
+    color: black;
+    background-color: #ffffff;
+}
+
+.view:backdrop,
+iconview:backdrop,
+.view text:backdrop,
+iconview text:backdrop,
+textview text:backdrop {
+    color: #323232;
+    background-color: #fcfcfc;
+}
+
+.view:backdrop:disabled,
+iconview:backdrop:disabled,
+.view text:backdrop:disabled,
+iconview text:backdrop:disabled,
+textview text:backdrop:disabled {
+    color: #c3c3c0;
+}
+
+.view:disabled,
+iconview:disabled,
+.view text:disabled,
+iconview text:disabled,
+textview text:disabled {
+    color: #8b8e8f;
+    background-color: #f1f1f1;
+}
+
+.view:selected:focus,
+iconview:selected:focus,
+.view:selected,
+iconview:selected,
+.view text:selected:focus,
+iconview text:selected:focus,
+textview text:selected:focus,
+.view text:selected,
+iconview text:selected,
+textview text:selected {
+    border-radius: 3px;
+}
+
+textview border {
+    background-color: #f4f4f3;
+}
+
+.rubberband,
+rubberband,
+flowbox rubberband,
+treeview.view rubberband,
+.content-view rubberband,
+.content-view .rubberband {
+    border: 1px solid #2a76c6;
+    background-color: rgba(42, 118, 198, 0.2);
+}
+
+flowbox flowboxchild {
+    padding: 3px;
+}
+
+flowbox flowboxchild:selected {
+    outline-offset: -2px;
+}
+
+.content-view .tile {
+    margin: 2px;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+.content-view .tile:backdrop {
+    background-color: transparent;
+}
+
+.content-view .tile:active,
+.content-view .tile:selected {
+    background-color: transparent;
+}
+
+.content-view .tile:disabled {
+    background-color: transparent;
+}
+
+label {
+    caret-color: currentColor;
+}
+
+label.separator {
+    color: #2e3436;
+}
+
+label.separator:backdrop {
+    color: #8b8e8f;
+}
+
+label selection {
+    background-color: #4a90d9;
+    color: #ffffff;
+}
+
+label:disabled {
+    color: #8b8e8f;
+}
+
+label:disabled:backdrop {
+    color: #c3c3c0;
+}
+
+label:backdrop {
+    color: #8b8e8f;
+}
+
+.dim-label,
+label.separator,
+.titlebar:not(headerbar) .subtitle,
+headerbar .subtitle {
+    opacity: 0.55;
+    text-shadow: none;
+}
+
+assistant .sidebar {
+    background-color: #ffffff;
+    border-top: 1px solid #b6b6b3;
+}
+
+assistant .sidebar:backdrop {
+    background-color: #fcfcfc;
+    border-color: #c0c0bd;
+}
+
+assistant.csd .sidebar {
+    border-top-style: none;
+}
+
+assistant .sidebar label {
+    padding: 6px 12px;
+}
+
+assistant .sidebar label.highlight {
+    background-color: #c3c4c4;
+}
+
+.csd popover.background.touch-selection,
+.csd popover.background.magnifier,
+popover.background.touch-selection,
+popover.background.magnifier,
+.csd popover.background.osd,
+popover.background.osd,
+.app-notification,
+.app-notification.frame,
+.osd .scale-popup,
+.osd {
+    color: #eeeeec;
+    border: none;
+    background-color: rgba(28, 31, 32, 0.7);
+    background-clip: padding-box;
+    text-shadow: 0 1px black;
+    -gtk-icon-shadow: 0 1px black;
+}
+
+popover.background.touch-selection:backdrop,
+popover.background.magnifier:backdrop,
+popover.background.osd:backdrop,
+.app-notification:backdrop,
+.osd .scale-popup:backdrop,
+.osd:backdrop {
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+}
+*/
+
+
+
+/*
+.xfce4-panel{
+    font-weight:                                    700;
+    color:                                          #363636;
+    background-color:                               #f1f1f1;
+    border:                                         none;
+}
+*/
+
+/*
+.gtkstyle-fallback{
+    color: #2e3436;
+    background-color: #e8e8e7;
+}
+
+.gtkstyle-fallback:hover{
+    color: #2e3436;
+    background-color: white;
+}
+
+.gtkstyle-fallback:active{
+    color: #2e3436;
+    background-color: #cfcfcd;
+}
+
+.gtkstyle-fallback:disabled{
+    color: #8b8e8f;
+    background-color: #f1f1f1;
+}
+
+.gtkstyle-fallback:selected{
+    color: #ffffff;
+    background-color: #4a90d9;
+}
+
+*/
+
+headerbar{
+    min-height:                                     46px;
+    padding:                                        0 6px;
+    background:                                     rgba(232, 232, 232, 1);
+    border-width:                                   0 0 1px;
+    border-style:                                   solid;
+    border-color:                                   #91918c;
+    border-radius:                                  0;
+    box-shadow:                                     inset 0 1px rgba(255, 255, 255, 0.8);
+}
+
+*:disabled{
+   -gtk-icon-effect:                                dim;
+}
+
+.background{
+    color:                                          rgba(32, 32, 32, 1);
+    background:                                     rgba(232, 232, 232, 1);
+}
+
+.frame,
+frame > border{
+    border:                                         1px solid rgba(192, 192, 192, 1);
+}
+
+frame > border.flat,
+.frame.flat {
+    border-style:                                   none;
+}
+
+/***********************************************************************
+    
+    Menu
+    
+************************************************************************/
+
+menubar > menuitem,
+.menubar > menuitem{
+    padding:                                        6px 8px;
+}
+
+menubar > menuitem:hover,
+.menubar > menuitem:hover{
+    box-shadow:                                     inset 0 -3px rgba(80, 144, 224, 1);
+}
+
+menubar > menuitem:disabled,
+.menubar > menuitem:disabled{
+    color:                                          rgba(160, 160, 160, 1);
+}
+menu,
+.menu,
+.context-menu{
+    background:                                     rgba(255, 255, 255, 1);
+    border:                                         1px solid rgba(192, 192, 192, 1);
+}
+
+menu > menuitem,
+.menu > menuitem,
+.context-menu > menuitem{
+    margin:                                         0px 1px;
+    padding:                                        6px 6px;
+}
+
+menu menuitem:hover,
+.menu menuitem:hover,
+.context-menu menuitem:hover{
+    background:                                     rgba(0, 0, 0, 0.07);
+}
+
+menu menuitem:disabled,
+.menu menuitem:disabled,
+.context-menu menuitem:disabled{
+    color:                                          rgba(160, 160, 160, 1);
+}
+
+menu menuitem arrow,
+.menu menuitem arrow,
+.context-menu menuitem arrow{
+    min-height:                                     16px;
+    min-width:                                      16px;
+}
+
+menu menuitem arrow:dir(ltr),
+.menu menuitem arrow:dir(ltr),
+.context-menu menuitem arrow:dir(ltr){
+    margin-left:                                    10px;
+   -gtk-icon-source:                               -gtk-icontheme("pan-end-symbolic");
+}
+
+menu menuitem arrow:dir(rtl),
+.menu menuitem arrow:dir(rtl),
+.context-menu menuitem arrow:dir(rtl){
+    margin-right:                                   10px;
+   -gtk-icon-source:                               -gtk-icontheme("pan-end-symbolic-rtl");
+}
+
+menu menuitem accelerator,
+.menu menuitem accelerator,
+.context-menu menuitem accelerator{
+    color:                                          rgba(96, 96, 96, 1);
+}
+
+menu menuitem:disabled accelerator,
+.menu menuitem:disabled accelerator,
+.context-menu menuitem:disabled accelerator{
+    color:                                          rgba(160, 160, 160, 1);
+}
+
+menu separator,
+.menu separator,
+.context-menu separator{
+    min-width:                                      1px;
+    min-height:                                     1px;
+    margin;         
+    background:                                     rgba(208, 208, 208, 1);
+}
+
+menu > arrow,
+.menu > arrow,
+.context-menu > arrow{
+    min-width:                                      16px;
+    min-height:                                     12px;
+    padding:                                        4px;
+    background:                                     rgba(0, 0, 0, 0.05);
+}
+
+menu > arrow.top,
+.menu > arrow.top,
+.context-menu > arrow.top{
+   -gtk-icon-source:                               -gtk-icontheme("pan-up-symbolic");
+}
+
+menu > arrow.bottom,
+.menu > arrow.bottom,
+.context-menu > arrow.bottom{
+   -gtk-icon-source:                               -gtk-icontheme("pan-down-symbolic");
+}
+
+menu > arrow:disabled,
+.menu > arrow:disabled,
+.context-menu > arrow:disabled{
+    color:                                          rgba(160, 160, 160, 1);
+}
+
+menuitem check,
+menuitem radio{
+    min-height:                                     16px;
+    min-width:                                      16px;
+}
+
+menuitem check:dir(ltr),
+menuitem radio:dir(ltr){
+    margin-right:                                   6px;
+}
+
+menuitem check:dir(rtl),
+menuitem radio:dir(rtl){
+    margin-left:                                    6px;
+}
+
+/***********************************************************************
+    
+    Text entry
+    
+************************************************************************/
+
+entry{
+    padding:                                        6px 6px;
+    caret-color:                                    currentColor;
+    background:                                     rgba(255, 255, 255, 1);
+    border:                                         1px solid rgba(192, 192, 192, 1);
+    border-radius:                                  3px;
+}
+
+entry.flat{
+    border:                                         none;
+}
+
+entry:focus{
+    border-color:                                   rgba(80, 144, 224, 1);
+}
+
+entry selection{
+    color:                                          rgba(255, 255, 255, 1);
+    background:                                     rgba(80, 144, 224, 1);
+}
+
+entry:disabled{
+    color:                                          rgba(160, 160, 160, 1);
+    background:                                     rgba(240, 240, 240, 1);
+}
+
+entry image.left{
+    margin-right:                                   6px;
+}
+
+entry image.right{
+    margin-left:                                    6px;
+}
+
+entry progress{
+    margin-bottom:                                 -4px;
+    background:                                     none;
+    border-bottom:                                  2px solid rgba(80, 144, 224, 1);
+}
+
+
+/***********************************************************************
+    
+    Button
+    
+************************************************************************/
+
+button{
+    padding:                                        6px 6px;
+    background:                                     linear-gradient(to bottom, rgba(240, 240, 240, 1), rgba(220, 220, 220, 1));
+    border:                                         1px solid rgba(192, 192, 192, 1);
+    border-radius:                                  3px;
+    outline:                                        1px dashed rgba(192, 192, 192, 1);
+    outline-offset:                                -4px;
+   -gtk-outline-radius:                             0px;
+}
+
+button:active,
+button:checked{
+    background:                                     rgba(208, 208, 208, 1);
+}
+
+button:disabled{
+    color:                                          rgba(160, 160, 160, 1);
+}
+
+button.flat{
+    background:                                     none;
+    border-color:                                   transparent;
+}
+
+button.flat:hover{
+    background:                                     linear-gradient(to bottom, rgba(240, 240, 240, 1), rgba(220, 220, 220, 1));
+    border-color:                                   rgba(192, 192, 192, 1);
+}
+
+button.flat:active,
+button.flat:checked{
+    background:                                     rgba(208, 208, 208, 1);
+    border-color:                                   rgba(192, 192, 192, 1);
+}
+
+button.flat:disabled{
+    background:                                     none;
+    border:                                         none;
+}
+
+/***********************************************************************
+    
+    Spin button
+    
+************************************************************************/
+
+spinbutton{
+    background:                                     rgba(255, 255, 255, 1);
+    border:                                         1px solid rgba(192, 192, 192, 1);
+    border-radius:                                  3px;
+}
+
+spinbutton entry{
+    background:                                     rgba(255, 255, 255, 1);
+    border:                                         none;
+}
+
+spinbutton.horizontal entry{
+    border-radius:                                  3px 0px 0px 3px;
+}
+
+spinbutton.vertical entry{
+    border-radius:                                  0px;
+}
+
+spinbutton button{
+    background:                                     rgba(255, 255, 255, 1);
+    border:                                         none;
+    border-radius:                                  0px;
+}
+
+spinbutton.horizontal button{
+    border-left:                                    1px solid rgba(192, 192, 192, 1);
+}
+
+spinbutton.horizontal button.up{
+    border-top-right-radius:                        3px;
+    border-bottom-right-radius:                     3px;
+}
+
+spinbutton.vertical button.up{
+    border-bottom:                                  1px solid rgba(192, 192, 192, 1);
+    border-top-left-radius:                         3px;
+    border-top-right-radius:                        3px;
+}
+
+spinbutton.vertical button.down{
+    border-top:                                     1px solid rgba(192, 192, 192, 1);
+    border-bottom-left-radius:                      3px;
+    border-bottom-right-radius:                     3px;
+}
+
+spinbutton button:active{
+    background:                                     rgba(216, 216, 216, 1);
+}
+
+spinbutton button:disabled{
+    color:                                          rgba(160, 160, 160, 1);
+}
+
+spinbutton:focus{
+    border-color:                                   rgba(80, 144, 224, 1);
+}
+
+spinbutton:disabled entry,
+spinbutton:disabled button{
+    color:                                          rgba(160, 160, 160, 1);
+    background:                                     rgba(240, 240, 240, 1);
+}
+
+/***********************************************************************
+    
+    Combo box
+    
+************************************************************************/
+
+combobox arrow {
+    min-width:                                      16px;
+    min-height:                                     16px;
+   -gtk-icon-source:                               -gtk-icontheme("pan-down-symbolic");
+}
+
+combobox entry{
+    border-top-right-radius:                        0px;
+    border-bottom-right-radius:                     0px;
+}
+
+combobox entry + button{
+    margin-left:                                   -1px;
+    border-top-left-radius:                         0px;
+    border-bottom-left-radius:                      0px;
+}
+
+combobox entry:focus + button{
+    border-left-color:                              rgba(80, 144, 224, 1);
+}
+
+/***********************************************************************
+    
+    Toolbar
+    
+************************************************************************/
+
+toolbar{
+    padding:                                        3px;
+}
+
+toolbar separator{
+    min-width:                                      1px;
+    min-height:                                     1px;
+    margin:                                         4px;
+    background:                                     rgba(200, 200, 200, 1);
+}
+
+toolbar button{
+    margin:                                         2px;
+    padding:                                        3px;
+}
+
+toolbar entry{
+    margin:                                         2px;
+}
+
+/***********************************************************************
+    
+    Tooltip
+    
+************************************************************************/
+
+tooltip{
+    padding:                                        4px;
+    border-radius:                                  3px;
+    text-shadow:                                    0 1px rgba(0, 0, 0, 1);
+}
+
+tooltip.background{
+    background:                                     rgba(0, 0, 0, 0.8);
+}
+
+tooltip decoration{
+    background:                                     none;
+}
+
+tooltip *{
+    padding:                                        4px;
+    color:                                          rgba(255, 255, 255, 1);
+    background:                                     transparent;
+}
+
+/***********************************************************************
+    
+    Scrollbars
+    
+************************************************************************/
+
+*{
+   -GtkScrollbar-has-backward-stepper:              false;
+   -GtkScrollbar-has-forward-stepper:               false;
+}
+
+scrollbar{
+    background:                                     none;
+}
+
+scrollbar slider{
+    min-width:                                      7px;
+    min-height:                                     7px;
+    background:                                     rgba(192, 192, 192, 1);
+    border-radius:                                  3px;
+}
+
+scrollbar:hover slider{
+    background:                                     rgba(80, 144, 224, 1);
+}
+
+scrollbar.horizontal slider{
+    min-width:                                      40px;
+    margin:                                         3px 0px;
+}
+
+scrollbar.vertical slider{
+    min-height:                                     40px;
+    margin:                                         0px 3px;
+}
+
+/***********************************************************************
+    
+    Switch
+    
+************************************************************************/
+
+switch{
+    min-width:                                      40px;
+    min-height:                                     20px;
+    padding:                                        4px;
+    color:                                          transparent;
+    background:                                     rgba(176, 176, 176, 1);
+    background-clip:                                content-box;
+    border-radius:                                  9999;
+}
+
+switch:checked{
+    background:                                     rgba(82, 148, 226, 1);
+    background-clip:                                content-box;
+}
+
+switch slider{
+    min-width:                                      20px;
+    min-height:                                     20px;
+    background:                                     rgba(255, 255, 255, 1);
+    background-clip:                                padding-box;
+    border:                                         1px solid transparent;
+    border-radius:                                  50%;
+    outline:                                        1px dashed rgba(192, 192, 192, 1);
+    outline-offset:                                -4px;
+   -gtk-outline-radius:                             50%;
+}
+
+switch:disabled slider{
+    background:                                     rgba(224, 224, 224, 1);
+    background-clip:                                padding-box;
+}
+
+/***********************************************************************
+    
+    Scale
+    
+************************************************************************/
+
+scale.fine-tune.trough {
+    margin: 8px;
+    border-radius: 3px;
+}
+
+scale trough{
+    min-height:                                     6px;
+    min-width:                                      6px;
+    margin:                                         9px;
+    background:                                     rgba(192, 192, 192, 1);
+    border-radius:                                  6px;
+}
+
+scale highlight{
+    background:                                     rgba(80, 144, 224, 1);
+    border-radius:                                  6px;
+}
+
+scale:disabled highlight{
+    background:                                     rgba(192, 192, 192, 1);
+}
+
+scale slider {
+    min-height:                                     16px;
+    min-width:                                      16px;
+    margin:                                        -8px;
+    background:                                     rgba(255, 255, 255, 1);
+    border:                                         1px solid rgba(192, 192, 192, 1);
+    border-radius:                                  50%;
+}
+
+scale slider{
+    min-height:                                     16px;
+    min-width:                                      16px;
+    margin:                                        -8px;
+    background:                                     rgba(255, 255, 255, 1);
+    border:                                         1px solid rgba(192, 192, 192, 1);
+    border-radius:                                  50%;
+}
+
+scale:focus slider{
+    border:                                         1px solid rgba(80, 144, 224, 1);
+}
+
+scale:disabled slider{
+    background:                                     rgba(224, 224, 224, 1);
+}
+
+
+
+
+
+
+
+
+
+/***********************************************************************
+    
+    Level bar
+    
+************************************************************************/
+
+
+
+
+
+/************************* Check and Radio items * */
+
+checkbutton.text-button,
+radiobutton.text-button {
+    padding: 2px 0;
+    outline:                                        1px dashed rgba(192, 192, 192, 1);
+    outline-offset:                                -4px;
+   -gtk-outline-radius:                             0px;
+}
+
+checkbutton.text-button label:not(:only-child):first-child,
+radiobutton.text-button label:not(:only-child):first-child {
+    margin-left: 4px;
+}
+
+checkbutton.text-button label:not(:only-child):last-child,
+radiobutton.text-button label:not(:only-child):last-child {
+    margin-right: 4px;
+}
+
+
+
+
+
+
+checkbutton.text-button,
+radiobutton.text-button {
+    padding: 2px 0;
+    outline-offset: 0;
+}
+
+checkbutton.text-button label:not(:only-child):first-child,
+radiobutton.text-button label:not(:only-child):first-child {
+    margin-left: 4px;
+}
+
+checkbutton.text-button label:not(:only-child):last-child,
+radiobutton.text-button label:not(:only-child):last-child {
+    margin-right: 4px;
+}
+
+check,
+radio {
+    min-height:                                     14px;
+    min-width:                                      14px;
+    margin:                                         0px 4px;
+    padding:                                        1px;
+    background:                                     rgba(252, 252, 252, 1);
+    border:                                         1px solid rgba(192, 192, 192, 1);
+    border-radius:                                  3px;
+    outline-color:                                  rgba(46, 52, 54, 0.3);
+   -gtk-icon-shadow:                                0px 1px rgba(248, 248, 248, 1);
+}
+
+check:checked {
+    -gtk-icon-source:                               -gtk-recolor(url("assets/check-symbolic.svg"));
+}
+
+check:indeterminate {
+    -gtk-icon-source:                               -gtk-recolor(url("assets/dash-symbolic.svg"));
+}
+
+radio {
+    border-radius:                                  100%;
+}
+
+radio:checked {
+    -gtk-icon-source:                               -gtk-recolor(url("assets/bullet-symbolic.svg"));
+}
+radio:indeterminate {
+    -gtk-icon-source:                               -gtk-recolor(url("assets/dash-symbolic.svg"));
+}
+
+menu menuitem check,
+menu menuitem radio,
+menu menuitem check:hover,
+menu menuitem radio:hover,
+menu menuitem check:disabled,
+menu menuitem radio:disabled {
+    min-height:                                     14px;
+    min-width:                                      14px;
+    color:                                          inherit;
+    background:                                     transparent;
+    border-color:                                   currentColor;
+   -gtk-icon-shadow:                                none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************************/
+
+textview text{
+    color:                                          rgba(0, 0, 0, 1);
+    background:                                     rgba(255, 255, 255, 1);
+}
+
+textview text selection{
+    color:                                          rgba(255, 255, 255, 1);
+    background:                                     rgba(80, 144, 224, 1);
+}
+
+
+
+
+
+textview text:disabled{
+    color:                                          rgba(160, 160, 160, 1);
+    x-background:                                   rgba(240, 240, 240, 1);
+    x-border-color:                                   rgba(182, 182, 182, 1);
+}
+
